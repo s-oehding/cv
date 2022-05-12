@@ -15,8 +15,7 @@ $timeline-bullet-width: .7em; // Diameter of the bullet point on the timeline.
 }
 
 .timeline-item {
-  margin-bottom: 2em;
-  margin-left: 2em;
+  margin-bottom: -3rem;
   
   h3 {
     font-size: 1em;
@@ -27,41 +26,54 @@ $timeline-bullet-width: .7em; // Diameter of the bullet point on the timeline.
     
     
   }
+
+  border-left: solid 2px #ccc;
+
   &::before {
-    content: "";
-    position: absolute;
-    left: -#{$timeline-left-padding + $timeline-bullet-width / 2};
-    background-color: $color-timeline;
-    width: $timeline-bullet-width;
-    height: $timeline-bullet-width;
+    content: '';
+    position: relative;
+    width: 10px;
+    height: 10px;
+    display: flex;
+    border: 3px solid #ccc;
     border-radius: 50%;
-    transform: translate(-#{$timeline-line-width / 2}, .2em);
+    background-color: #2c3e50;
+    /* top: 10px; */
+    left: -21px;
   }
+  // &::after {
+  //     content: '';
+  //     position: absolute;
+  //     border: solid 8px;
+  //     border-color: transparent #ccc transparent transparent;
+  //     top: 10px;
+  //     left: -17px;
+  // }
 }
 
-.timeline-items {
-  margin: $timeline-left-margin;
-  padding: 0.01em 0 $timeline-bottom-padding $timeline-left-padding;
-  border-left: $timeline-line-width solid $color-timeline;
-}
+// .timeline-items {
+//   margin: $timeline-left-margin;
+//   padding: 0.01em 0 $timeline-bottom-padding $timeline-left-padding;
+//   border-left: $timeline-line-width solid $color-timeline;
+// }
 
-.timeline-item {
-  margin-top: -.3em; // pull up a bit.
+// .timeline-item {
+//   margin-bottom: -3rem;
   
-  time {
-    display: block; // instead of inline, so that we can apply margins.
-    float: left; // to avoid having a width of 100%.
-    background-color: $color-bg-discs;
-    padding: .2em .4em;
-  }
+//   time {
+//     display: block; // instead of inline, so that we can apply margins.
+//     float: left; // to avoid having a width of 100%.
+//     background-color: $color-bg-discs;
+//     padding: .2em .4em;
+//   }
   
-  & > * {
-    margin: 1em 0;
-  }
+//   & > * {
+//     margin: 1em 0;
+//   }
   
-  .location {
-    clear: both; // To clear the float of the <time> element above.
-    font-size: 0.85em;
-    font-style: italic;
-  }
-}
+//   .location {
+//     clear: both; // To clear the float of the <time> element above.
+//     font-size: 0.85em;
+//     font-style: italic;
+//   }
+// }
