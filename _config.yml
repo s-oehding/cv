@@ -191,8 +191,8 @@ content:
         </div>
         <div class="col-xs-12 col-md-6">
           <img src="images/bike.jpg" />
-          <iframe height='auto' width='100%' style="min-height: 460px" frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/athletes/31512898/latest-rides/7dee0c0f16d353e312cf41df8ab76c4f43387085'></iframe>
-        </div>
+          <iframe height='auto' width='100%' style="min-height: 200px; margin-top: 2rem;" frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/athletes/31512898/activity-summary/7dee0c0f16d353e312cf41df8ab76c4f43387085'></iframe>
+          </div>
       </div>
 # Footer
 footer_show_references: false
