@@ -16,6 +16,9 @@ $timeline-bullet-width: .7em; // Diameter of the bullet point on the timeline.
 
 .timeline-item {
   margin-bottom: -3rem;
+  border-left: solid 2px #ccc;
+  display: flex;
+  height: 100%;
   
   h3 {
     font-size: 1em;

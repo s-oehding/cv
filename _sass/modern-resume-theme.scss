@@ -114,6 +114,20 @@
   }
 }
 
+.row {
+  &.timeline-row {
+    margin-bottom: -3rem;
+    display: flex;
+    flex-direction: row;
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 0;
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+}
+
 .layout-right {
   flex-direction: row-reverse;
 }
@@ -139,6 +153,7 @@
 
   .details, .content {
     width: 100%;
+    margin-bottom: 3rem;
   }
 }
 
